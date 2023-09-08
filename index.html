@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+        <title>Bookmark</title>
+        <link href="images/bookmark-logo.png" rel="icon">
+    </head>
+
+    <body>
+       
+        <header>
+
+            <div class="container">
+                <h1 class="text-muted my-5">Bookmarker</h1>
+            </div>
+        </header>
+        <div class="container ">
+            <div class="well my-3">
+                <h2>Bookmark your favorite sites</h2>
+                <div id="myForm" class="column px-3">
+                    <div class="form-group">
+                        <label>Site Name</label>
+                        <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Site URL</label>
+                        <input type="text" id="siteUrl" class="form-control" placeholder="Website URL">
+                    </div>
+                        <button type="submit" onclick="saveBookmark()" class="btn btn-primary m-auto">Submit</button>
+                </div>
+            </div>
+
+            <div class="row marketing">
+                <div class="col-md-12">
+                    <div id="bookmarksResults"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container footer">
+                <p>&copy; 2019 Bookmarker Inc.</p>
+            </div>
+        </footer>
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
